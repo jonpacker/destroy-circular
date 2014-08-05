@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jonpacker/destroy-circular/issues"
   },
-  "homepage": "https://github.com/jonpacker/destroy-circular"
+  "homepage": "https://github.com/jonpacker/destroy-circular",
+  "devDependencies": {
+    "mocha": "^1.21.3"
+  }
 }
