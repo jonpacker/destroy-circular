@@ -1,6 +1,6 @@
 {
   "name": "destroy-circular",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Replace circular references in an object with a string",
   "main": "dc.js",
   "scripts": {
