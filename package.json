@@ -25,5 +25,8 @@
   "homepage": "https://github.com/jonpacker/destroy-circular",
   "devDependencies": {
     "mocha": "^1.21.3"
+  },
+  "dependencies": {
+    "circular": "^1.0.3"
   }
 }
