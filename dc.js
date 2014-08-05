@@ -1,6 +1,6 @@
 module.exports = function(obj) {
   function copy(from, seen) {
-    var to = {};
+    var to = Array.isArray(from) ? [] : {};
     seen.push(from);
     Object.keys(from).forEach(function(key) {
       if (!from[key] || (typeof from[key] != 'object' && !Array.isArray(from[key]))) 
