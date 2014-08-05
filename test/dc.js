@@ -19,4 +19,16 @@ describe('destroy-circular', function() {
     assert(destroyed != obj);
     assert(obj.child.parent == obj);
   });
+  it('should only destroy parent references', function() {
+    var obj = {};
+    var common = { thing: obj };
+    obj.one = { firstThing: common };
+    obj.two = { secondThing: common };
+    
+    var d = dc(obj);
+    assert(typeof d.one.firstThing == 'object')
+    assert(typeof d.two.secondThing == 'object')
+    assert.equal(d.one.firstThing.thing, '[Circular]')
+    assert.equal(d.two.secondThing.thing, '[Circular]')
+  });
 })
