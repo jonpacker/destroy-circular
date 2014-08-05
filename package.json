@@ -1,0 +1,26 @@
+{
+  "name": "destroy-circular",
+  "version": "0.0.0",
+  "description": "Replace circular references in an object with a string",
+  "main": "dc.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonpacker/destroy-circular"
+  },
+  "keywords": [
+    "destroy",
+    "circular",
+    "references",
+    "replace",
+    "string"
+  ],
+  "author": "Jon Packer <contact@jonpacker.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonpacker/destroy-circular/issues"
+  },
+  "homepage": "https://github.com/jonpacker/destroy-circular"
+}
